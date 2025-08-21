@@ -1,0 +1,15 @@
+services:
+ trippass:
+    build: .
+    container_name: trippass
+    ports:
+      - "127.0.0.1:9091:9080"   # host 9091 → container 9080
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - tripwire-backend
+
+networks:
+  tripwire-backend:
+    external: true
