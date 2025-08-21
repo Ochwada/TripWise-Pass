@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+<h1>Welcome to your - Tripwise System - Dashboard</h1>
+
+<p>Name: <span th:text="${name}">User Name</span></p>
+<p>Email: <span th:text="${email}">user@example.com</span></p>
+
+<img th:src="${picture}" alt="Profile Picture" width="100" />
+</body>
+
+</html>
