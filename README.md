@@ -7,7 +7,7 @@
 Microservices ⬇️ part of **TripWise System**
 
 
-#### 🖇️ Microservice 1 : TripHub - [ Gateway  Service](https://github.com/Ochwada/TripWise-Pass)
+#### 🖇️ Microservice 1 : TripHub - [ Gateway  Service]( )
 #### 🖇️ Microservice 2: TripPass - [ Authentication Service](https://github.com/Ochwada/TripWise-Pass)
 
 ---
