@@ -105,11 +105,13 @@ docker run -p 9091:9091 trippass
 ```
 
 # API Endpoints
-| Method | Endpoint                       | Auth Required | Description                                                                 |
-|--------|--------------------------------|---------------|-----------------------------------------------------------------------------|
-| `GET`  | `/`                            | ❌ No          | Public home page (renders `home.html`)                                      |
-| `GET`  | `/login`                       | ❌ No          | Custom login page (renders `login.html` if defined)                         |
-| `GET`  | `/oauth2/authorization/google` | ❌ Redirect    | Triggers Google OAuth2 login via Spring Security                            |
-| `GET`  | `/internal/token`              | ✅ Yes         | Internal endpoint to get the authenticated user's raw ID Token (JWT)  <br/> |
-| `GET`  | `/dashboard`                   | ✅ Yes         | User dashboard after successful login (renders `dashboard.html`)            |
+
+| Method | Endpoint                       | Auth Required | Description                                                          |
+|--------|--------------------------------|---------------|----------------------------------------------------------------------|
+| `GET`  | `/`                            | ❌ No          | Public home page (renders `home.html`)                               |
+| `GET`  | `/login`                       | ❌ No          | Custom login page (renders `login.html` if defined)                  |
+| `GET`  | `/oauth2/authorization/google` | ❌ Redirect    | Triggers Google OAuth2 login via Spring Security                     |
+| `GET`  | `/dashboard`                   | ✅ Yes         | User dashboard after successful login (renders `dashboard.html`)     |
+| `GET`  | `/token`                       | ✅ Yes         | Internal endpoint to get the authenticated user's raw ID Token (JWT) |
+
 

@@ -26,6 +26,19 @@ import org.springframework.web.server.ResponseStatusException;
 @Controller
 @Slf4j
 public class AuthApplication {
+
+
+    /**
+     * Handles the home page request.
+     * This route is public and does not require authentication.
+     *
+     * @return the name of the home view template ("home.html").
+     */
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+
     /**
      * Handles the login page request.
      *
@@ -63,16 +76,6 @@ public class AuthApplication {
         return "dashboard";
     }
 
-    /**
-     * Handles the home page request.
-     * This route is public and does not require authentication.
-     *
-     * @return the name of the home view template ("home.html").
-     */
-    @GetMapping("/")
-    public String home() {
-        return "home";
-    }
 
     /**
      * Exposes the authenticated user's raw ID token (JWT) via a simple HTTP GET endpoint.
