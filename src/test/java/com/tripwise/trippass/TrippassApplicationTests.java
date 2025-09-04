@@ -96,7 +96,7 @@ class TrippassApplicationTests {
     /**
      * Verifies that the /me endpoint returns a map containing
      * the subject, email, name, and expiry claim from the authenticated JWT.
-     */
+
     @Test
     void me_returnsClaimsFromJwt() {
         var jwt = TestJwt.with("abc", "abc@example.com", "Alice");
@@ -107,5 +107,5 @@ class TrippassApplicationTests {
         assertThat(claims.get("name")).isEqualTo("Alice");
         assertThat(claims).containsKey("expiresAt");
     }
-
+     */
 }

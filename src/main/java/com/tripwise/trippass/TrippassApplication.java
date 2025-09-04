@@ -30,7 +30,8 @@ public class TrippassApplication {
         // List of expected keys to load from the .env file
         String[] envVar = {
                 "GOOGLE_CLIENT_ID",
-                "GOOGLE_CLIENT_SECRET"
+                "GOOGLE_CLIENT_SECRET",
+                "SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI"
         };
 
         // Iterate through keys and set them as JVM system properties if found

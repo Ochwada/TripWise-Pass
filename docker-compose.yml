@@ -3,7 +3,7 @@ services:
     build: .
     container_name: trippass
     ports:
-      - "9091:9080"   # host 9091 → container 9080
+      - "9091:9091"
     env_file:
       - .env
     restart: unless-stopped
