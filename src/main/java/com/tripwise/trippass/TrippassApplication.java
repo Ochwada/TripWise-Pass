@@ -31,7 +31,9 @@ public class TrippassApplication {
         String[] envVar = {
                 "GOOGLE_CLIENT_ID",
                 "GOOGLE_CLIENT_SECRET",
-                "SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI"
+                "SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI",
+                "JWT_ALG",
+                "JWT_SECRET"
         };
 
         // Iterate through keys and set them as JVM system properties if found
