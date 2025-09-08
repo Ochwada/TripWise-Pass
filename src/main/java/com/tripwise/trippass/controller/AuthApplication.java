@@ -104,10 +104,4 @@ public class AuthApplication {
 
         return user.getIdToken().getTokenValue();
     }
-
-    @GetMapping("/token2")
-    public Map<String, String> token(@AuthenticationPrincipal OidcUser oidc) {
-        // If this requires login, you'll need a session cookie on 9091.
-        return Map.of("id_token", oidc.getIdToken().getTokenValue());
-    }
 }
