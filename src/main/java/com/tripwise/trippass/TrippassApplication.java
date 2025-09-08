@@ -33,7 +33,7 @@ public class TrippassApplication {
                 "GOOGLE_CLIENT_SECRET",
                 "SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI",
                 "JWT_ALG",
-                "JWT_SECRET"
+                "JWT_SECRETg"
         };
 
         // Iterate through keys and set them as JVM system properties if found
